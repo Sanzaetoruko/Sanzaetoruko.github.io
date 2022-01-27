@@ -47,15 +47,17 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 mb-5">
-				<div class="mb-3">
-				  <label for="exampleFormControlInput1" class="form-label">Name</label>
-				  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name ...">
-				  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-				  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-				  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				  <button type="submit" class="btn btn-dark my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
-				</div>
+				<form name="submit-to-google-sheet">
+					<div class="mb-3">
+					  <label for="exampleFormControlInput1" class="form-label">Name</label>
+					  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name ..." name="name">
+					  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+					  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+					  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+					  <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+					  <button type="submit" class="btn btn-dark my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+					</div>
+				</form>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -122,12 +124,16 @@
 
 
 	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbx0bP-JvQiHXtQ0on0zbw7_zS_F7bho5DKMhE1VZVsAPcxkNYMhbcc5sd12SeSc3dnIdg/exec'
+	  const form = document.forms['submit-to-google-sheet']
 
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => console.log('Success!', response))
+	      .catch(error => console.error('Error!', error.message))
+	  })
 	</script>
-
-
-
-
 
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
