@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bookcustomize.css">
+	<script src="https://kit.fontawesome.com/9c9352ccb6.js" crossorigin="anonymous"></script>
+	<title>Tiptour Travel</title>
+</head>
+<body>
+
+	<!-- Navbar / Menu  -->
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">
+	    	<img src="images/logo3.png" alt="" class="img-fluid img-cus">
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav ms-auto fw-light">
+	        <a class="nav-link me-2 active" aria-current="page" href="index.html">Home</a>
+	        <a class="nav-link me-2" href="index.html#about">About</a>
+	        <a class="nav-link me-2" href="bookonline.html">Book Online</a>
+	        <a class="nav-link me-2" href="contact.html">Contact</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+
+
+
+	<!-- Form -->
+
+	<div class="container">
+		<form class="fw-light" action="bookonline.html" method="post">
+			<div class="row my-5">
+				<div class="col-xs-12 col-sm-10 col-md-8">
+					
+					  <div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Name of tour</label>
+					    <input type="text" class="form-control" id="nametourinput" aria-describedby="emailHelp" placeholder="Your tour">
+					    <p id="invalid-tour-name" class="text-danger"></p>
+					  </div>
+					  <div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Customize your tour plan</label>
+					    <div class="input-group">
+						  <span class="input-group-text">Time schedule</span>
+						  <select class="form-select" aria-label="Default select example" id="day">
+							<option selected value="">Day</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>						
+						  </select>
+						  <select class="form-select" aria-label="Default select example" id="month">
+							<option selected value="">Month</option>
+							<option value="01">January</option>
+							<option value="02">February</option>
+							<option value="03">March</option>
+							<option value="04">April</option>
+							<option value="05">May</option>
+							<option value="06">June</option>
+							<option value="07">July</option>
+							<option value="08">August</option>
+							<option value="09">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">Desember</option>
+						  </select>
+						  <select class="form-select" aria-label="Default select example" id="year">
+						  	<option selected value="">Year</option>
+							<script>
+								var myDate = new Date()
+								var myYear = myDate.getFullYear();
+								var myStop = myYear + 100;
+								for(var i = myYear; i < myYear+101; i++){
+									document.write('<option value="'+i+'">'+i+'</option>') 
+								}
+							</script>
+						  </select>
+						</div>
+					    <p id="invalid-time" class="text-danger"></p>
+					  </div>
+					  <div class="mb-3">
+						<div class="row">
+							<div class="col-xs-6 col-sm-4 col-md-2"></div>
+						  	<div class="col-xs-12 col-sm-10 col-md-8">
+						  		<img src="images/default.jpg" alt="" class="img-responsive img-thumbnail" id="poster" style="{width:100%;height:auto;">
+						  	</div>
+						  	<div class="col-xs-6 col-sm-4 col-md-2"></div>
+					  	</div>
+					  </div>
+					  <div class="mb-3">
+					    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck1">Hagia sophia</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck2">Blue mosque</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck3">Topkapi palace</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck4">Bosporus</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck5">Basilica cistern</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck6">Galata tower</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck7">Dolmabahce palace</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck8">Ephesus</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck9">Cappadocia</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck10">Underground city</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck11">Pergamum</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck12">Uçhisar</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck13">Aspendos</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck14" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck14">Mount nemrut</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck15">Antalya</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck16" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck16">Ölüdeniz</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck17" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck17">Erciyes</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck18" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck18">Ani</label>
+	 					<input type="checkbox" class="btn-check" id="btncheck19" autocomplete="off">
+	 					<label class="btn btn-outline-dark my-ucus" for="btncheck19">Pamukkale</label>
+					  </div>
+					  <div class="mb-3 py-3">
+					  	<div class="row">
+					  		<div class="col-xs-12 col-sm-12 col-md-11">
+					  			<div class="input-group flex-nowrap">
+								  <span class="input-group-text" id="addon-wrapping">Vehicle type</span>
+								  <select class="form-select" aria-label="Default select example" id="lol">
+								  	<option selected>Select vehicle</option>
+									<option id="op1"value="1">Group car (Capacity: 15)</option>
+									<option id="op2"value="2">Private car (Capacity: 3)</option>
+									<option id="op3"value="3">Vip car (Capacity: 4)</option>
+								  </select>
+						  			<mark id="vlabel" class="text-center">
+						  				 The daily price is $<span id="vprice">0</span>
+						  			</mark>
+								</div>
+					  		</div>
+					  		<div class="col-xs-2 col-sm-2 col-md-1"></div>
+					  	</div>
+					  </div>
+					  <div class="mb-3">
+					  	<h4 class="fw-light">Average tour prices <span id="averageprice" style="background: #a6e9d5;">0</span>$ </h4>
+					  </div>
+					  <div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Name</label>
+					    <input type="text" class="form-control" id="nameinput" aria-describedby="emailHelp">
+					    <p id="invalid-name" class="text-danger"></p>
+					  </div>
+					  <div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Email address <span id="exc"></span></label>
+					    <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp" onkeydown="checkmail()">
+					    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+					    <p id="invalid-email" class="text-danger"></p>
+					  </div>
+					  <div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+					    <input type="text" class="form-control" id="numberinput" aria-describedby="emailHelp" placeholder="+00 ....">
+					    <div id="emailHelp" class="form-text">Please use your country code (+00)</div>
+					    <p id="invalid-number" class="text-danger"></p>
+					  </div>
+					  <div class="mb-3">
+					  </div>
+					  <div class="mb-3 form-check">
+					    <input type="checkbox" class="form-check-input" id="checkinput">
+					    <label class="form-check-label" for="exampleCheck1">I agree to <a href="" class="text-decoration-none">terms and conditions</a> </label>
+					  </div>
+					  <button type="button" class="btn btn-dark fw-light" id="submitbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+					
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 my-5">
+					<div class="card" style="width: 100%;" id="custom">
+						  <img src="images/cardnature.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Costumizeable Tour</h5>
+						    <p class="card-text">You can choose the destination and the time. VIP vehicles are also available.</p>
+						  </div>
+						  <ul class="list-group list-group-flush">
+						    <li class="list-group-item fw-light">DD/MM/YYYY</li>
+						    <li class="list-group-item fw-light">? $</li>
+						    <li class="list-group-item fw-light"><i class="far fa-clock"></i> ?</li>
+						  </ul>  
+					</div>	  
+				</div>
+			</div>
+		</form>	
+	</div>
+
+
+
+
+		<!-- Modals -->
+
+	<!-- Button trigger modal -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="modalh">The reservation was unsuccessful</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <p id="modalp">Please complete every form.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button class="btn btn-secondary" type="submit"><a href="" type="submit" onclick="passdat();" class="text-white text-decoration-none" id="modala">Close</a></button>
+	        </form>
+	      </div>
+	    </div>
+  </div>
+</div>
+
+	
+
+	<!-- Footer -->
+
+	<div class="container-fluid bg-dark">
+		<div class="row">
+			<div class="col-md-4 text-white p-5">
+				<h3 class="fw-bold">Our Contact</h3>
+				<h4 class="fw-light">Ask us about anything</h4>
+				<p class="fw-light">Phone: (021)821-021-049 <br>Email: Tiptour@gmail.com</p>
+			</div>
+			<div class="col-md-4 text-white p-5 ftscr">
+				<div class="row">
+					<h3 class="fw-bold">Links</h3>
+					<a href="index.html#about" class="fw-light text-white">About</a>
+					<a href="bookonline.html" class="fw-light text-white">Book Online</a>
+					<a href="contact.html" class="fw-light text-white">Contact</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-white p-5 scmd">
+				<h4 class="fw-bold">Social Media</h4>
+				<a href="" class="text-white"><i class="fab fa-facebook-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-instagram-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-youtube-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-twitter-square"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		// Transfering value to bookonline.html
+		function passdat(){
+			localStorage.setItem("price",total)	
+			localStorage.setItem("name-input",tourinput.value)
+			localStorage.setItem("day-input",day.value)
+			localStorage.setItem("month-input",month.value)
+			localStorage.setItem("year-input",year.value)
+			localStorage.setItem("bolx",bolx);
+			localStorage.setItem("bolb",bolb)
+			return false		
+		}
+		var bolx = true;
+		var bolb = true;
+	</script>
+
+
+
+
+
+
+	<script>
+
+		// Poster buttons
+
+
+		// alll var
+
+		var btn = document.getElementsByClassName('btn-check')
+		var poster = document.getElementById('poster')
+		var aprice = document.getElementById('averageprice')
+
+		// vehicle variable
+
+		var vlabel = document.getElementById('vlabel')
+		var vprice = document.getElementById('vprice')
+		var vop1 = document.getElementById('op1')
+		var vop2 = document.getElementById('op2')
+		var vop3 = document.getElementById('op3')
+		var vprices1 = 0;
+		var vprices2 = 0;
+		var vprices3 = 0;		
+		var vbol1 = true;
+		var vbol2 = true;
+		var vbol3 = true;
+
+					// Vehicle and the price
+
+
+		// 1 option			
+
+		vop1.onclick = function(){
+			if (vbol1==true) {
+				total = total+50;
+				vprice.innerHTML = 50;
+				aprice.innerHTML = total;
+				vbol1 = false;
+				if (vbol2 == false) {
+					total = total - 100;
+					aprice.innerHTML = total;
+					vbol2 = true;
+				}
+				if (vbol3 == false) {
+					total = total - 200
+					aprice.innerHTML = total;
+					vbol3 = true;
+				}
+			} else if(vbol1 = false){
+				vbol1 = true;
+				vprice.innerHTML = 50;
+				aprice.innerHTML = total;
+			}	
+			
+		
+
+
+		}
+
+		// 2 option
+
+		vop2.onclick = function(){
+			if (vbol2==true) {
+				total = total+100;
+				vprice.innerHTML = 100;
+				aprice.innerHTML = total;
+				vbol2 = false;
+				if (vbol1 == false) {
+					total = total - 50;
+					aprice.innerHTML = total;
+					vbol1 = true;
+				}
+				if (vbol3 == false) {
+					total = total - 200
+					aprice.innerHTML = total;
+					vbol3 = true;
+				}
+			} else if(vbol2 = false){
+				vbol2 = true;
+				vprice.innerHTML = 100;
+				aprice.innerHTML = total;
+			}
+
+
+		}
+
+		// 3 option
+
+		vop3.onclick = function(){
+			if (vbol3==true) {
+				total = total+200;
+				vprice.innerHTML = 200;
+				aprice.innerHTML = total;
+				vbol3 = false;
+				if (vbol2 == false) {
+					total = total - 100;
+					aprice.innerHTML = total;
+					vbol2 = true;
+				}
+				if (vbol1 == false) {
+					total = total - 50;
+					aprice.innerHTML = total;
+					vbol1 = true;
+				}
+			} else if(vbol3 = false){
+				vbol3 = true;
+				vprice.innerHTML = 0;
+				aprice.innerHTML = total; 
+			} 
+
+
+		}			
+
+
+
+
+					// Poster and button Section
+
+
+
+
+		// Boolean var
+
+		var pr0 = true;
+		var pr1 = true;
+		var pr2 = true;
+		var pr3 = true;
+		var pr4 = true;
+		var pr5 = true;
+		var pr6 = true;
+		var pr7 = true;
+		var pr8 = true;
+		var pr9 = true;
+		var pr10 = true;
+		var pr11 = true;
+		var pr12 = true;
+		var pr13 = true;
+		var pr14 = true;
+		var pr15 = true;
+		var pr16 = true;
+		var pr17 = true;
+		var pr18 = true;
+
+		// price
+
+		var total = 0;
+
+
+		// Poster var 
+
+
+		var dparam = 0;
+
+		// 0 Button
+
+		btn[0].onclick = function(){
+			dparam = 0;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr0 == true) {
+				total = total+100;
+				aprice.innerHTML = total;
+				pr0 = false;
+			} else if(pr0 == false){
+				pr0 = true;
+				total = total - 100;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 1 button
+
+		btn[1].onclick = function(){
+			dparam = 1;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr1 == true) {
+				total = total+100;
+				aprice.innerHTML = total;
+				pr1 = false;
+			} else if(pr1 == false){
+				pr1 = true;
+				total = total - 100;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 2 button
+
+		btn[2].onclick = function(){
+			dparam = 2;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr2 == true) {
+				total = total+50;
+				aprice.innerHTML = total;
+				pr2 = false;
+			} else if(pr2 == false){
+				pr2 = true;
+				total = total - 50;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 3 Button
+
+		btn[3].onclick = function(){
+			dparam = 3;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr3 == true) {
+				total = total+230;
+				aprice.innerHTML = total;
+				pr3 = false;
+			} else if(pr3 == false){
+				pr3 = true;
+				total = total - 230;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 4 Button
+
+		btn[4].onclick = function(){
+			dparam = 4;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr4 == true) {
+				total = total+130;
+				aprice.innerHTML = total;
+				pr4 = false;
+			} else if(pr4 == false){
+				pr4 = true;
+				total = total - 130;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 5 Button
+
+		btn[5].onclick = function(){
+			dparam = 5;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr5 == true) {
+				total = total+70;
+				aprice.innerHTML = total;
+				pr5 = false;
+			} else if(pr5 == false){
+				pr5 = true;
+				total = total - 70;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 6 Button
+
+		btn[6].onclick = function(){
+			dparam = 6;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr6 == true) {
+				total = total+120;
+				aprice.innerHTML = total;
+				pr6 = false;
+			} else if(pr6 == false){
+				pr6 = true;
+				total = total - 120;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 7 Button
+
+		btn[7].onclick = function(){
+			dparam = 7;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr7 == true) {
+				total = total+250;
+				aprice.innerHTML = total;
+				pr7 = false;
+			} else if(pr7 == false){
+				pr7 = true;
+				total = total - 250;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 8 Button
+
+		btn[8].onclick = function(){
+			dparam = 8;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr8 == true) {
+				total = total+120;
+				aprice.innerHTML = total;
+				pr8 = false;
+			} else if(pr8 == false){
+				pr8 = true;
+				total = total - 120;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 9 Button
+
+		btn[9].onclick = function(){
+			dparam = 9;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr9 == true) {
+				total = total+120;
+				aprice.innerHTML = total;
+				pr9 = false;
+			} else if(pr9 == false){
+				pr9 = true;
+				total = total - 120;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 10 Button
+
+		btn[10].onclick = function(){
+			dparam = 10;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr10 == true) {
+				total = total+50;
+				aprice.innerHTML = total;
+				pr10 = false;
+			} else if(pr10 == false){
+				pr10 = true;
+				total = total - 50;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 11 Button
+
+		btn[11].onclick = function(){
+			dparam = 11;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr11 == true) {
+				total = total+100;
+				aprice.innerHTML = total;
+				pr11 = false;
+			} else if(pr11 == false){
+				pr11 = true;
+				total = total - 100;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 12 Button
+
+		btn[12].onclick = function(){
+			dparam = 12;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr12 == true) {
+				total = total+160;
+				aprice.innerHTML = total;
+				pr12 = false;
+			} else if(pr12 == false){
+				pr12 = true;
+				total = total - 160;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 13 Button
+
+		btn[13].onclick = function(){
+			dparam = 13;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr13 == true) {
+				total = total+100;
+				aprice.innerHTML = total;
+				pr13 = false;
+			} else if(pr13 == false){
+				pr13 = true;
+				total = total - 100;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 14 Button
+
+		btn[14].onclick = function(){
+			dparam = 14;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr14 == true) {
+				total = total+100;
+				aprice.innerHTML = total;
+				pr14 = false;
+			} else if(pr14 == false){
+				pr14= true;
+				total = total - 100;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 15 Button
+
+		btn[15].onclick = function(){
+			dparam = 15;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr15 == true) {
+				total = total+100;
+				aprice.innerHTML = total;
+				pr15 = false;
+			} else if(pr15 == false){
+				pr15 = true;
+				total = total - 100;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 16 Button
+
+		btn[16].onclick = function(){
+			dparam = 16;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr16 == true) {
+				total = total+50;
+				aprice.innerHTML = total;
+				pr16 = false;
+			} else if(pr16 == false){
+				pr16 = true;
+				total = total - 50;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 17 Button
+
+		btn[17].onclick = function(){
+			dparam = 17;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr17 == true) {
+				total = total+100;
+				aprice.innerHTML = total;
+				pr17 = false;
+			} else if(pr17 == false){
+				pr17 = true;
+				total = total - 100;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		// 18 Button
+
+		btn[18].onclick = function(){
+			dparam = 18;
+			poster.src = "images/custom/post"+dparam+".jpg"
+			if (pr18 == true) {
+				total = total+200;
+				aprice.innerHTML = total;
+				pr18 = false;
+			} else if(pr18 == false){
+				pr18 = true;
+				total = total - 200;
+				aprice.innerHTML = total;
+			}			
+		}
+
+		
+
+
+
+				// Poster and buttond END
+
+
+
+
+
+
+
+		// Validations forms
+		
+
+		// Boolean var
+
+		var namebol = 0;
+		var mailbol = 0;
+		var numberbol = 0;
+		var checkbol = 0;
+		var mailsbol = 0;
+		var tourbol = 0;
+		var timebol = 0;
+
+		// Input Variables
+
+		var nameinput = document.getElementById('nameinput')
+		var mailinput = document.getElementById('emailinput')
+		var numberinput = document.getElementById('numberinput')
+		var checkinput = document.getElementById('checkinput')
+		var submit = document.getElementById('submitbtn')
+		var exclamation = document.getElementById('exc')
+		var tourinput = document.getElementById('nametourinput')
+		var day = document.getElementById('day')
+		var month = document.getElementById('month')
+		var year = document.getElementById('year')
+
+		//Var modal
+
+		var modalp = document.getElementById('modalp')
+		var modalh = document.getElementById('modalh')
+		var modala = document.getElementById('modala')
+
+		// var na
+
+		// Invalid Variables
+
+		var namelabel = document.getElementById('invalid-name')
+		var maillabel = document.getElementById('invalid-email')
+		var numberlabel = document.getElementById('invalid-number')
+		var pat =/^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
+		var tourlabel = document.getElementById('invalid-tour-name')
+		var timelabel = document.getElementById('invalid-time')
+
+
+		// Name tour Validation
+
+		tourinput.onfocus = function(){
+			if (tourinput.value == "") {
+				tourlabel.innerHTML = ""
+				tourbol = 0;
+			} else {
+				tourlabel.innerHTML = ""
+			}
+		}
+
+		tourinput.onblur = function(){
+			if (tourinput.value == "") {
+				tourlabel.innerHTML = "Please enter your name of your tour on this form"
+				tourbol = 0;
+			} else {
+				tourlabel.innerHTML = ""
+				tourbol = 1;
+			}
+		}
+
+
+		// Time input validation
+
+		 // Day
+
+		var daybol = 0;
+
+		day.onblur = function(){
+			if (day.value == "") {
+				timelabel.innerHTML = "Please enter a time on this form"
+				daybol = 0;
+			} else {
+				timelabel.innerHTML = ""
+				daybol = 1;
+			}
+		}
+
+		day.onfocus = function(){
+			if (day.value == "") {
+				timelabel.innerHTML = ""
+				daybol = 0;
+			} else {
+				timelabel.innerHTML = ""
+				daybol = 1;
+			}
+		}
+
+
+		 // Month
+
+		var monthbol = 0;
+
+		 month.onblur = function(){
+			if (month.value == "") {
+				timelabel.innerHTML = "Please enter a time on this form"
+				monthbol = 0;
+			} else {
+				timelabel.innerHTML = ""
+				monthbol = 1;
+			}
+		}
+
+		month.onfocus = function(){
+			if (month.value == "") {
+				timelabel.innerHTML = ""
+				monthbol = 0;
+			} else {
+				timelabel.innerHTML = ""
+				monthbol = 1;
+			}
+		}
+
+		 // year
+
+
+		var yearbol = 0;
+
+		 year.onblur = function(){
+			if (year.value == "") {
+				timelabel.innerHTML = "Please enter a time on this form"
+				yearbol = 0;
+			} else {
+				timelabel.innerHTML = ""
+				yearbol = 1;
+			}
+		}
+
+		year.onfocus = function(){
+			if (year.value == "") {
+				timelabel.innerHTML = ""
+				yearbol = 0;
+			} else {
+				timelabel.innerHTML = ""
+				yearbol = 1;
+			}
+		} 
+
+
+		// Name Input Validation
+
+		nameinput.onfocus = function(){
+			if (nameinput.value == "") {
+				namelabel.innerHTML = ""
+				namebol = 0;
+			} else {
+				namelabel.innerHTML = ""
+			}
+		}
+
+		nameinput.onblur = function(){
+			if (nameinput.value == "") {
+				namelabel.innerHTML = "Please enter your name on this form"
+				namebol = 0;
+			} else {
+				namelabel.innerHTML = ""
+				namebol = 1;
+			}
+		}
+
+
+		// Email Input Validation
+
+		function checkmail(){
+			if (mailinput.value.match(pat)) {
+				mailsbol = 1;
+				mailinput.className = "form-control"
+				exclamation.innerHTML = ''
+			} else {
+				mailsbol = 0;
+				mailinput.className = "form-control border border-danger"
+				exclamation.innerHTML = '<i class="fas fa-exclamation-circle text-danger"></i><p class="text-danger">\
+				Your email address is invalid (@mail.com) required!</p>'
+			}
+		}
+
+		mailinput.onfocus = function(){
+			if (mailinput.value == "") {
+				maillabel.innerHTML = ""
+				mailbol = 0;
+			} else {
+				namelabel.innerHTML = ""
+			}
+		}
+
+		emailinput.onblur = function(){
+			if (mailinput.value == "") {
+				maillabel.innerHTML = "Please enter your email on this form"
+				mailbol = 0;
+			} else {
+				maillabel.innerHTML = ""
+				mailbol = 1;
+			}
+		}
+
+
+		// Number validation
+
+		numberinput.onfocus = function(){
+			if (numberinput.value == "") {
+				numberlabel.innerHTML = ""
+				numberbol = 0;
+			} else {
+				numberlabel.innerHTML = ""
+			}
+		}
+
+		numberinput.onblur = function(){
+			if (numberinput.value == "") {
+				numberlabel.innerHTML = "Please enter your number on this form"
+				numberbol = 0;
+			} else{
+				numberlabel.innerHTML = ""
+				numberbol = 1;
+			}
+		}
+
+
+		// Check input validation
+
+		checkinput.onclick = function(){
+			if (checkbol == 0) {
+				checkbol = 1;
+			} else if (checkbol == 1){
+				checkbol = 0;
+			}
+		}
+
+
+
+
+
+
+		// Last Validation
+		var btnsub = document.getElementById('btnsub')
+
+		submit.onclick = function(){
+			if (namebol == 1 && mailbol == 1 && numberbol == 1 && checkbol ==1 && tourbol == 1 && daybol == 1 && monthbol == 1 && yearbol == 1) {
+				modalh.innerHTML = "A reservation has been accepted"
+				modalp.innerHTML = "We will contact you to let you know how to pay"
+				modala.href = "bookonline.html"
+			} else {	
+
+			}
+		}
+
+
+
+
+		
+
+
+
+	</script>
+
+
+
+
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

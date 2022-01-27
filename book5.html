@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/book1.css">
+	<script src="https://kit.fontawesome.com/9c9352ccb6.js" crossorigin="anonymous"></script>
+	<title>Tiptour Travel</title>
+</head>
+<body>
+
+	<!-- Navbar / Menu  -->
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">
+	    	<img src="images/logo3.png" alt="" class="img-fluid img-cus">
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav ms-auto fw-light">
+	        <a class="nav-link me-2 active" aria-current="page" href="index.html">Home</a>
+	        <a class="nav-link me-2" href="index.html#about">About</a>
+	        <a class="nav-link me-2" href="bookonline.html">Book Online</a>
+	        <a class="nav-link me-2" href="contact.html">Contact</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- thumbnail -->
+
+
+
+	<!-- Forms -->
+
+	
+	<div class="container cardss">
+		<div class="row">
+			<div class="col-md-8 py-5">
+				<form class="fw-light">
+				  <div class="mb-3">
+				    <label for="exampleInputEmail1" class="form-label">Name</label>
+				    <input type="text" class="form-control" id="nameinput" aria-describedby="emailHelp">
+				    <p id="invalid-name" class="text-danger"></p>
+				  </div>
+				  <div class="mb-3">
+				    <label for="exampleInputEmail1" class="form-label">Email address <span id="exc"></span></label>
+				    <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp" onkeydown="checkmail()">
+				    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+				    <p id="invalid-email" class="text-danger"></p>
+				  </div>
+				  <div class="mb-3">
+				    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+				    <input type="text" class="form-control" id="numberinput" aria-describedby="emailHelp" placeholder="+00 ....">
+				    <div id="emailHelp" class="form-text">Please use your country code (+00)</div>
+				    <p id="invalid-number" class="text-danger"></p>
+				  </div>
+				  <div class="mb-3">
+				  </div>
+				  <div class="mb-3 form-check">
+				    <input type="checkbox" class="form-check-input" id="checkinput">
+				    <label class="form-check-label" for="exampleCheck1">I agree to <a href="" class="text-decoration-none">terms and conditions</a> </label>
+				  </div>
+				  <button type="button" class="btn btn-dark fw-light" id="submitbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-4 p-5">
+				<div class="card" style="width: 100%;" id="city">
+				  <img src="images/cardcity.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">City Tour</h5>
+				    <p class="card-text">Amazing city exploration & tasting of street foods.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item fw-light">10/03/2022</li>
+				    <li class="list-group-item fw-light">675 $</li> 
+				    <li class="list-group-item fw-light"><i class="far fa-clock"></i> 5 Days - 4 Nights</li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modals -->
+
+	<!-- Button trigger modal -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="modalh">The reservation was unsuccessful</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <p id="modalp">Please complete every form.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="" class="text-white text-decoration-none" id="modala">Close</a></button>
+	      </div>
+	    </div>
+  </div>
+</div>
+
+	
+
+
+
+
+
+
+
+	<!-- Footer  -->
+
+	<div class="container-fluid bg-dark">
+		<div class="row">
+			<div class="col-md-4 text-white p-5">
+				<h3 class="fw-bold">Our Contact</h3>
+				<h4 class="fw-light">Ask us about anything</h4>
+				<p class="fw-light">Phone: (021)821-021-049 <br>Email: Tiptour@gmail.com</p>
+			</div>
+			<div class="col-md-4 text-white p-5 ftscr">
+				<div class="row">
+					<h3 class="fw-bold">Links</h3>
+					<a href="index.html#about" class="fw-light text-white">About</a>
+					<a href="bookonline.html" class="fw-light text-white">Book Online</a>
+					<a href="contact.html" class="fw-light text-white">Contact</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-white p-5 scmd">
+				<h4 class="fw-bold">Social Media</h4>
+				<a href="" class="text-white"><i class="fab fa-facebook-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-instagram-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-youtube-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-twitter-square"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script>
+
+
+		// Boolean var
+
+		var namebol = 0;
+		var mailbol = 0;
+		var numberbol = 0;
+		var checkbol = 0;
+		var mailsbol = 0;
+
+		// Input Variables
+
+		var nameinput = document.getElementById('nameinput')
+		var mailinput = document.getElementById('emailinput')
+		var numberinput = document.getElementById('numberinput')
+		var checkinput = document.getElementById('checkinput')
+		var submit = document.getElementById('submitbtn')
+		var exclamation = document.getElementById('exc')
+
+		//Var modal
+
+		var modalp = document.getElementById('modalp')
+		var modalh = document.getElementById('modalh')
+		var modala = document.getElementById('modala')
+
+		// var na
+
+		// Invalid Variables
+
+		var namelabel = document.getElementById('invalid-name')
+		var maillabel = document.getElementById('invalid-email')
+		var numberlabel = document.getElementById('invalid-number')
+		var pat =/^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
+
+
+
+
+
+		// Name Input Validation
+
+		nameinput.onfocus = function(){
+			if (nameinput.value == "") {
+				namelabel.innerHTML = ""
+				namebol = 0;
+			} else {
+				namelabel.innerHTML = ""
+			}
+		}
+
+		nameinput.onblur = function(){
+			if (nameinput.value == "") {
+				namelabel.innerHTML = "Please enter your name on this form"
+				namebol = 0;
+			} else {
+				namelabel.innerHTML = ""
+				namebol = 1;
+			}
+		}
+
+
+		// Email Input Validation
+
+		function checkmail(){
+			if (mailinput.value.match(pat)) {
+				mailsbol = 1;
+				mailinput.className = "form-control"
+				exclamation.innerHTML = ''
+			} else {
+				mailsbol = 0;
+				mailinput.className = "form-control border border-danger"
+				exclamation.innerHTML = '<i class="fas fa-exclamation-circle text-danger"></i><p class="text-danger">\
+				Your email address is invalid (@mail.com) required!</p>'
+			}
+		}
+
+		mailinput.onfocus = function(){
+			if (mailinput.value == "") {
+				maillabel.innerHTML = ""
+				mailbol = 0;
+			} else {
+				namelabel.innerHTML = ""
+			}
+		}
+
+		emailinput.onblur = function(){
+			if (mailinput.value == "") {
+				maillabel.innerHTML = "Please enter your email on this form"
+				mailbol = 0;
+			} else {
+				maillabel.innerHTML = ""
+				mailbol = 1;
+			}
+		}
+
+
+		// Number validation
+
+		numberinput.onfocus = function(){
+			if (numberinput.value == "") {
+				numberlabel.innerHTML = ""
+				numberbol = 0;
+			} else {
+				numberlabel.innerHTML = ""
+			}
+		}
+
+		numberinput.onblur = function(){
+			if (numberinput.value == "") {
+				numberlabel.innerHTML = "Please enter your number on this form"
+				numberbol = 0;
+			} else{
+				numberlabel.innerHTML = ""
+				numberbol = 1;
+			}
+		}
+
+
+		// Check input validation
+
+		checkinput.onclick = function(){
+			if (checkbol == 0) {
+				checkbol = 1;
+			} else if (checkbol == 1){
+				checkbol = 0;
+			}
+		}
+
+
+
+
+
+
+		// Last Validation
+
+		submit.onclick = function(){
+			if (namebol == 1 && mailbol == 1 && numberbol == 1 && checkbol ==1) {
+				modalh.innerHTML = "A reservation has been accepted"
+				modalp.innerHTML = "We will contact you to let you know how to pay"
+				modala.href = "bookonline.html"
+			} else {	
+
+			}
+		}
+
+
+
+
+		
+
+
+
+	</script>
+
+
+
+
+
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

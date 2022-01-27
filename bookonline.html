@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custombook.css">
+	<script src="https://kit.fontawesome.com/9c9352ccb6.js" crossorigin="anonymous"></script>
+	<title>Tiptour Travel</title>
+</head>
+<body>
+
+	<!-- Navbar / Menu  -->
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">
+	    	<img src="images/logo3.png" alt="" class="img-fluid img-cus">
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav ms-auto fw-light">
+	        <a class="nav-link me-2 active" aria-current="page" href="index.html">Home</a>
+	        <a class="nav-link me-2" href="index.html#about">About</a>
+	        <a class="nav-link me-2" href="">Book Online</a>
+	        <a class="nav-link me-2" href="contact.html">Contact</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	
+	<!-- Slider -->
+	
+	<div class="container-fluid">
+		<div class="col-md-12 bg-gcus text-center text-white p-5">
+			<h4 class="fw-bold fs-1 p-3">Choose Your Destination</h4>
+		</div>
+	</div>
+
+	
+	<!-- Cards -->
+
+	<div class="container p-3 cardss">
+		<div class="row p-3">
+			<div class="col-sm-6 col-md-4 p-3">
+				<div class="card" style="width: 100%;" id="custom">
+				  <img src="images/cardnature.jpg" class="card-img-top" alt="..." id="imgg">
+				  <div class="card-body">
+				    <h5 class="card-title"><span id="name">Costumizeable Tour</span></h5>
+				    <p class="card-text" id="desc">You can choose the destination and the time. VIP vehicles are also available.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item fw-light"><span id="day">DD</span>/<span id="month">MM</span>/<span id="year">YYYY</span></li>
+				    <li class="list-group-item fw-light"><span id="price">?</span> $</li>
+				    <li class="list-group-item fw-light"><i class="far fa-clock"></i> ?</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="bookcustomize.html" class="card-link btn btn-dark" onclick="clear();" style="color: #fff; text-decoration:none;">Customize</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 p-3">
+				<div class="card" style="width: 100%;" id="winter">
+				  <img src="images/cardwinter.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Winter Tour</h5>
+				    <p class="card-text">Take you to incredible places with a great view on the white snow.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item fw-light">02/06/2022</li>
+				    <li class="list-group-item fw-light">835 $</li>
+				    <li class="list-group-item fw-light"><i class="far fa-clock"></i> 6 Days - 5 Nights</li> 
+				  </ul>
+				  <div class="card-body">
+				    <a href="book1.html" class="card-link btn btn-dark">Book Now</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 p-3">
+				<div class="card" style="width: 100%;" id="istanbul">
+				  <img src="images/card2.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Istanbul Tour</h5>
+				    <p class="card-text">On this tour we will explore the historic landmarks of Istanbul.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item fw-light">01/03/2022</li>
+				    <li class="list-group-item fw-light">475 $</li> 
+				    <li class="list-group-item fw-light"><i class="far fa-clock"></i> 4 Days - 3 Nights</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="book2.html" class="card-link btn btn-dark">Book Now</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 p-3">
+				<div class="card" style="width: 100%;" id="summer">
+				  <img src="images/card4.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Summer Tour</h5>
+				    <p class="card-text">Enjoy the summer in Turkey by exploring a lot of incredible natural places.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item fw-light">13/07/2022</li>
+				    <li class="list-group-item fw-light">1145 $</li> 
+				    <li class="list-group-item fw-light"><i class="far fa-clock"></i> 8 Days - 7 Nights</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="book3.html" class="card-link btn btn-dark">Book Now</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 p-3">
+				<div class="card" style="width: 100%;" id="history">
+				  <img src="images/cardhistory.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">History Tour</h5>
+				    <p class="card-text">Turkey has many interesting historical places. Come on, we'll check 'em out.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item fw-light">08/11/2022</li>
+				    <li class="list-group-item fw-light">855 $</li> 
+				    <li class="list-group-item fw-light"><i class="far fa-clock"></i> 7 Days - 6 Nights</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="book4.html" class="card-link btn btn-dark">Book Now</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 p-3">
+				<div class="card" style="width: 100%;" id="city">
+				  <img src="images/cardcity.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">City Tour</h5>
+				    <p class="card-text">Amazing city exploration & tasting of street foods.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item fw-light">10/03/2022</li>
+				    <li class="list-group-item fw-light">675 $</li> 
+				    <li class="list-group-item fw-light"><i class="far fa-clock"></i> 5 Days - 4 Nights</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="book5.html" class="card-link btn btn-dark">Book Now</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<div class="container-fluid bg-dark">
+		<div class="row">
+			<div class="col-md-4 text-white p-5">
+				<h3 class="fw-bold">Our Contact</h3>
+				<h4 class="fw-light">Ask us about anything</h4>
+				<p class="fw-light">Phone: (021)821-021-049 <br>Email: Tiptour@gmail.com</p>
+			</div>
+			<div class="col-md-4 text-white p-5 ftscr">
+				<div class="row">
+					<h3 class="fw-bold">Links</h3>
+					<a href="index.html#about" class="fw-light text-white">About</a>
+					<a href="" class="fw-light text-white">Book Online</a>
+					<a href="" class="fw-light text-white">Contact</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-white p-5 scmd">
+				<h4 class="fw-bold">Social Media</h4>
+				<a href="" class="text-white"><i class="fab fa-facebook-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-instagram-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-youtube-square"></i></a>
+				<a href="" class="text-white"><i class="fab fa-twitter-square"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		function clear(){
+			
+		}
+	</script>
+	<script>
+		var bolbf = "false";
+		var bolx = false;
+		var bolx = localStorage.getItem('bolx');
+		var imgg = document.getElementById("imgg")
+		if (bolx == "true") {
+			document.getElementById('price').innerHTML = localStorage.getItem("price");	
+			document.getElementById('name').innerHTML = localStorage.getItem("name-input");
+			document.getElementById('day').innerHTML = localStorage.getItem("day-input");
+			document.getElementById('month').innerHTML = localStorage.getItem("month-input");
+			document.getElementById('year').innerHTML = localStorage.getItem("year-input");
+			imgg.src = "images/after.jpg"
+			localStorage.clear();
+		}
+	</script>
+
+
+
+
+
+
+	<script>
+		
+	</script>
+
+
+
+
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

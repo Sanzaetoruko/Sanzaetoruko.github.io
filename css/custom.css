@@ -1,0 +1,116 @@
+
+/*.bg-lights{
+	background: #fff !important
+}*/
+
+/*Navbar*/
+
+
+.img-cus{
+	width: 18.9375rem !important;
+	height: 4.6875rem !important;
+}
+
+/*307 x 200*/
+
+
+
+/*Slider*/
+
+
+@media (min-width: 1200px){
+	.fs-custom {
+		font-size: 3.75rem !important;
+	}
+
+	.pcus {
+		font-size: 1.25rem !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*Special*/
+
+.special hr {
+	background-color: #000;
+	display: inline-block;
+	height: 5px;
+	margin-top: 0;
+	width: 80px;
+}
+
+.special h1 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.special h4 {
+	font-size: 1.875rem;
+}
+
+.special .list-group-item {
+	border: 0;
+	padding: 0.20rem 0rem;
+}
+
+.special a {
+	font-size: 20px;
+	font-family: Century Gothic;
+	margin-left: 0.0625rem;
+}
+
+.special .fas {
+	font-size:19px;
+}
+
+
+/*Card*/
+
+.card-body a {
+	text-decoration: none;
+	color: #000;
+}
+
+.card-body h4{
+	transition: color 0.25s;
+}
+
+.card-body h4:hover{
+	color: #9e2f2f;
+}
+
+/*Button*/
+
+.btnbooks a {
+	border-radius: 0;
+	padding: 10px 15px;
+	font-size: 17px;
+}
+
+/*Partner*/
+
+.partc h1{
+	font-size: 55px;
+}
+
+/*Footer*/
+
+.ftscr a {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.ftscr a:hover{
+	text-decoration: underline;
+}
+
+.scmd i {
+	font-size: 30px;
+}

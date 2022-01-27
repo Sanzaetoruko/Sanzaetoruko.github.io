@@ -1,0 +1,59 @@
+
+/*.bg-lights{
+	background: #fff !important
+}*/
+
+/*Navbar*/
+
+
+.img-cus{
+	width: 18.9375rem !important;
+	height: 4.6875rem !important;
+}
+
+/*307 x 200*/
+
+
+
+/*Slider*/
+
+.bg-gcus {
+	background: #919191;
+}
+
+/*Card*/
+
+.cardss h5 {
+	font-family: Century Gothic;
+	font-weight: lighter;
+}
+
+.cardss p {
+	font-weight: lighter;
+}
+
+.cardss a {
+	font-family: Century Gothic;
+}
+
+
+/*Partner*/
+
+.partc h1{
+	font-size: 55px;
+}
+
+/*Footer*/
+
+.ftscr a {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.ftscr a:hover{
+	text-decoration: underline;
+}
+
+.scmd i {
+	font-size: 30px;
+}

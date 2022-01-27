@@ -1,0 +1,35 @@
+
+/*Navbar*/
+
+
+.img-cus{
+	width: 18.9375rem !important;
+	height: 4.6875rem !important;
+}
+
+
+/*Forms*/
+
+.my-ucus {
+	margin:2px;
+}
+
+.vprice {
+	margin-right:10px;
+}
+
+
+/*Footer*/
+
+.ftscr a {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.ftscr a:hover{
+	text-decoration: underline;
+}
+
+.scmd i {
+	font-size: 30px;
+}

@@ -1,0 +1,32 @@
+/*Navbar*/
+.img-cus{
+	width: 18.9375rem !important;
+	height: 4.6875rem !important;
+}
+
+/*Card*/
+
+.cardss h5 {
+	font-family: Century Gothic;
+	font-weight: lighter;
+}
+
+.cardss p {
+	font-weight: lighter;
+}
+
+/*Footer*/
+
+.ftscr a {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.ftscr a:hover{
+	text-decoration: underline;
+}
+
+.scmd i {
+	font-size: 30px;
+}
+
